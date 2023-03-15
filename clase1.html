@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Resumen
+
+        // Var, let y Const. Sintaxis
+        var nombre = "Pablo";
+        let edad = 31;
+        const DNI = 36122074;
+        // Var en desuso. Con ES6 aparecen let y const. Let para las variables y const para las constantes
+
+        //Declaracion de una variable
+        let anio;
+        // Asignacion o inicializacion de una variable
+        anio = 2023;
+
+        // Tipos de datos
+        //Numericos
+        let num = 30; 
+        // String
+        let frase = "A la grande le puse Cuca";
+        // Booleano
+        let modoOscuro = true;
+        // Undefined
+        let algo;
+        console.log(algo);
+        // null
+        null;
+        // Estos valores son valores primitivos. Tambien existen otros dos que no son primitivos
+        // Array
+        const CARRITO = [];
+        // Objeto
+        const persona = {
+            name: "Pablo",
+            age: 31,
+            address: "solano de paz 467"
+        }
+        console.log (persona);
+
+        // Tipado dinamico. Ejemplo
+        let any = 38;
+        console.log (any);
+        any = "asdsasdsa";
+        console.log(any);
+        // Las variables pueden guardar cualquier valor. No hace falta especificarle el tipo de dato como en otros lenguajes
+
+        // Operaciones aritmeticas con valores numericos: suma, resta, multiplicacion, division
+        let num1 = 8;
+        let num2 = 15;
+
+        console.log ( num1  + num2);
+        console.log (num2 - num1);
+        console.log(num1 * num2);
+        console.log (num2 / num1); 
+
+        // Otras operaciones con datos numericos
+        // typeof: Nos indica el tipo de dato de la variable a la cual hacemos referencia
+        let num3 = 39;
+        console.log(typeof num3);
+        console.log (typeof any);
+        console.log (typeof CARRITO);
+
+        //NaN
+        // isNaN()
+        // toString() Transforma un dato de tipo number, en uno de tipo string
+        let numero = 19;
+        console.log (numero)
+        console.log (numero.toString());
+        // toFixed() Redondea numeros. 
+        const PI = 3.141591;
+        console.log (PI.toFixed(2));
+
+        //Operaciones con datos de tipo string
+        // Concatenacion
+        let saludo = "hola";
+        let saludo2 = "mundo";
+
+        console.log (saludo + saludo2);
+        // template literals
+        let palabra = "mundo"
+        console.log (`hola ${palabra}`);
+        // .lenght
+        console.log(saludo.lenght); 
+        //.includes()
+        console.log(frase.includes("hola"));
+        // .slice(comienzo, fin)
+        console.log(frase.slice(5, 10));
+        console.log(saludo2.slice(2,4));
+        //.replace()
+        console.log (frase.replace("Cuca", "boba"));
+        //.trim()
+        let phrase = "         aasdfs sdad          ";
+        console.log (phrase);
+        console.log (phrase.trim());
+        // . split()
+        let phrase2 = " a veces , para caminar , necesitas , caminar"
+        console.log (phrase2.split(","));
+        let phrase3 = " mi madre - siempre me dice - chinga - tu madre";
+        console.log(phrase3.split("-"));
+        
+    </script>
+</body>
+</html>
